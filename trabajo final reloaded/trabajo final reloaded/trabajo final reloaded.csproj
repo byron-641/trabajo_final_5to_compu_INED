@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD9EFE89-7287-499E-9F12-C4FE84F57B8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>trabajo_final_reloaded</RootNamespace>
+    <AssemblyName>trabajo final reloaded</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>https://byron641.visualstudio.com/reloaded/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6B3203D2F02CED4D909139F08FA229E6320AAFBC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>trabajo final reloaded_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrador.Designer.cs">
+      <DependentUpon>administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bimestres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bimestres.Designer.cs">
+      <DependentUpon>bimestres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editado.Designer.cs">
+      <DependentUpon>editado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creadornotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creadornotas.Designer.cs">
+      <DependentUpon>creadornotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editor.Designer.cs">
+      <DependentUpon>editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="escoger_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="escoger_3.Designer.cs">
+      <DependentUpon>escoger_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="maestro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maestro.Designer.cs">
+      <DependentUpon>maestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="forms.cs" />
+    <Compile Include="prueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prueba.Designer.cs">
+      <DependentUpon>prueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seleccionalumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seleccionalumno.Designer.cs">
+      <DependentUpon>seleccionalumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seleccionaver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seleccionaver.Designer.cs">
+      <DependentUpon>seleccionaver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="visualizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visualizador.Designer.cs">
+      <DependentUpon>visualizador.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="administrador.resx">
+      <DependentUpon>administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bimestres.resx">
+      <DependentUpon>bimestres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editado.resx">
+      <DependentUpon>editado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creadornotas.resx">
+      <DependentUpon>creadornotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editor.resx">
+      <DependentUpon>editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="escoger_3.resx">
+      <DependentUpon>escoger_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maestro.resx">
+      <DependentUpon>maestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="seleccionalumno.resx">
+      <DependentUpon>seleccionalumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seleccionaver.resx">
+      <DependentUpon>seleccionaver.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="trabajo final reloaded_ClaveTemporal.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
