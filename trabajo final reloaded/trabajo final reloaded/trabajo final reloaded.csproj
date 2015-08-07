@@ -124,7 +124,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="forms.cs" />
     <Compile Include="prueba.cs">
       <SubType>Form</SubType>
     </Compile>

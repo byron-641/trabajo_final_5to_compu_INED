@@ -19,7 +19,8 @@ namespace trabajo_final_reloaded
 
         private void button1_Click(object sender, EventArgs e)
         {
-            forms.seleccion_alumno.Show();
+            seleccionalumno seleccion_alumno = new seleccionalumno();
+            seleccion_alumno.Show();
             
             
         }
@@ -38,7 +39,8 @@ namespace trabajo_final_reloaded
 
         private void button3_Click(object sender, EventArgs e)
         {
-            forms.seleccionaver.Show();
+            seleccionaver seleccionaver = new seleccionaver();
+            seleccionaver.Show();
             
         }
     }
