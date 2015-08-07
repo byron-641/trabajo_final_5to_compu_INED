@@ -19,12 +19,14 @@ namespace trabajo_final_reloaded
 
         private void button1_Click(object sender, EventArgs e)
         {
-            forms.editor.Show();
+            editor editor = new editor();
+            editor.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            forms.seleccionaver.Show();
+            seleccionaver seleccionaver = new seleccionaver();
+            seleccionaver.Show();
         }
     }
 }

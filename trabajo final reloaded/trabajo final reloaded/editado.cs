@@ -19,7 +19,8 @@ namespace trabajo_final_reloaded
 
         private void button1_Click(object sender, EventArgs e)
         {
-            forms.administrador.Show();
+            administrador administrador = new administrador();
+            administrador.Show();
             this.Hide();
         }
     }

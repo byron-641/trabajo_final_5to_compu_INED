@@ -19,22 +19,26 @@ namespace trabajo_final_reloaded
 
         private void button1_Click(object sender, EventArgs e)
         {
-            forms.creadornotas.Show();
+            creadornotas creadornotas = new creadornotas();
+            creadornotas.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            forms.creadornotas.Show();
+            creadornotas creadornotas = new creadornotas();
+            creadornotas.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            forms.creadornotas.Show();
+            creadornotas creadornotas = new creadornotas();
+            creadornotas.Show();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            forms.creadornotas.Show();
+            creadornotas creadornotas = new creadornotas();
+            creadornotas.Show();
         }
     }
 }

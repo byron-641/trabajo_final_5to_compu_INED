@@ -142,6 +142,7 @@
     <Compile Include="seleccionaver.Designer.cs">
       <DependentUpon>seleccionaver.cs</DependentUpon>
     </Compile>
+    <Compile Include="validar.cs" />
     <Compile Include="visualizador.cs">
       <SubType>Form</SubType>
     </Compile>

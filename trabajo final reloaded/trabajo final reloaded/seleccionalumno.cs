@@ -19,14 +19,16 @@ namespace trabajo_final_reloaded
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            forms.creadordatos.Show();
+
+            creadordatos creadordatos = new creadordatos();
+            creadordatos.Show();
             
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            forms.escoger_3.Show();
+            escoger_3 escoger_3 = new escoger_3();
+            escoger_3.Show();
             
             
         

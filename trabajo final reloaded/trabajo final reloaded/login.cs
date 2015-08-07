@@ -13,12 +13,14 @@ namespace trabajo_final_reloaded
     
     public partial class login : Form
     {
+        validar v = new validar();
         public login()
 
         {
             InitializeComponent();
 
         }
+        
        
 
         private void button2_Click(object sender, EventArgs e)
@@ -29,30 +31,48 @@ namespace trabajo_final_reloaded
         private void button1_Click(object sender, EventArgs e)
         {
             
-            string usuario, contraseña;
-            usuario = textBox1.Text;
-            contraseña = textBox2.Text;
-            if ((usuario=="admin")&&(contraseña=="1234"))
+            if (textBox1.Text=="admin"&& double.Parse(textBox2.Text)==1234)
             {
-                forms.administrador.Show();
-                
-            }
-            if ((usuario == "maestro") && (contraseña == "123"))
-            {
-                forms.maestro.Show();
+                MessageBox.Show("Bienvenido Administrador");
+                this.Hide();
+                administrador administrador = new administrador();
+                administrador.Show();
 
             }
-            if ((usuario == "alumno") && (contraseña == "12"))
+            if (textBox1.Text == "maestro" && double.Parse(textBox2.Text) == 1243)
             {
-                forms.seleccionaver.Show();
+                MessageBox.Show("Bienvenido Maestro");
+                this.Hide();
+                maestro maestro = new maestro();
+                maestro.Show();
 
             }
-            else
+            if (textBox1.Text == "alumno" && double.Parse(textBox2.Text) == 1212)
             {
-                
+                MessageBox.Show("Bienvenido Alumno");
+                this.Hide();
+                seleccionaver seleccionaver = new seleccionaver();
+                seleccionaver.Show();
 
             }
 
+           
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validar.SoloLetras(e);
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            validar.SoloNumeros(e);
+        }
+        
     }
 }
