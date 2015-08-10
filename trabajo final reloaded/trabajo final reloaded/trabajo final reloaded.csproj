@@ -125,10 +125,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="proyectoDataSet2.Designer.cs">
+    <Compile Include="proyecto_finalDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>proyectoDataSet2.xsd</DependentUpon>
+      <DependentUpon>proyecto_finalDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="prueba.cs">
       <SubType>Form</SubType>
@@ -204,16 +204,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="proyectoDataSet2.xsc">
-      <DependentUpon>proyectoDataSet2.xsd</DependentUpon>
+    <None Include="proyecto_finalDataSet.xsc">
+      <DependentUpon>proyecto_finalDataSet.xsd</DependentUpon>
     </None>
-    <None Include="proyectoDataSet2.xsd">
+    <None Include="proyecto_finalDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>proyectoDataSet2.Designer.cs</LastGenOutput>
+      <LastGenOutput>proyecto_finalDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="proyectoDataSet2.xss">
-      <DependentUpon>proyectoDataSet2.xsd</DependentUpon>
+    <None Include="proyecto_finalDataSet.xss">
+      <DependentUpon>proyecto_finalDataSet.xsd</DependentUpon>
     </None>
     <None Include="trabajo final reloaded_ClaveTemporal.pfx" />
   </ItemGroup>
@@ -250,7 +250,7 @@
     <None Include="Resources\ined.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="proyecto.accdb">
+    <Content Include="proyecto_final.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -43,5 +43,16 @@ namespace trabajo_final_reloaded.Properties {
                 return ((string)(this["proyectoConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\proyecto_final.accd" +
+            "b")]
+        public string proyecto_finalConnectionString {
+            get {
+                return ((string)(this["proyecto_finalConnectionString"]));
+            }
+        }
     }
 }
