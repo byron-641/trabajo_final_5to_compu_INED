@@ -20,11 +20,17 @@ namespace trabajo_final_reloaded
         private void button1_Click(object sender, EventArgs e)
         {
             seleccionalumno seleccion_alumno = new seleccionalumno();
+            login login = new login();
             seleccion_alumno.Show();
+            this.Hide();
+            
             
             
         }
+        
+      
 
+       
         private void button2_Click(object sender, EventArgs e)
         {
             editor editor = new editor();

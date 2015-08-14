@@ -19,8 +19,45 @@ namespace trabajo_final_reloaded
 
         private void button1_Click(object sender, EventArgs e)
         {
-            bimestres bimestres = new bimestres();
-            bimestres.Show();
+            groupBox2.Visible = true;
+            groupBox3.Visible = true;
+            button2.Visible = true;
+            button3.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked == true)
+            
+               {
+                 
+
+                }
+            if (radioButton2.Checked == true)
+           {
+
+
+           }
+            if (radioButton3.Checked == true)
+           {
+
+
+           }
+            if (radioButton4.Checked == true)
+           {
+
+
+           }
+            else
+              
+               {
+                   MessageBox.Show("Seleccione Bimestre");
+
+               }
+        }
+
+        
     }
 }

@@ -35,6 +35,7 @@ namespace trabajo_final_reloaded
             {
                 MessageBox.Show("Bienvenido Administrador");
                 this.Hide();
+                
                 administrador administrador = new administrador();
                 administrador.Show();
 

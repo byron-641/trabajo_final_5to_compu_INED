@@ -19,7 +19,7 @@ namespace trabajo_final_reloaded
 
         private void button1_Click(object sender, EventArgs e)
         {
-            creadordatos creadordatos = new creadordatos();
+            editor_datos creadordatos = new editor_datos();
             creadordatos.Show();
         }
     }
