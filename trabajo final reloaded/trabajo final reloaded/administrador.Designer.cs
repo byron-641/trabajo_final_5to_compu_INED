@@ -73,6 +73,7 @@
             this.Controls.Add(this.button1);
             this.Name = "administrador";
             this.Text = "administrador";
+            this.Load += new System.EventHandler(this.administrador_Load);
             this.ResumeLayout(false);
 
         }

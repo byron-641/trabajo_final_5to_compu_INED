@@ -49,5 +49,10 @@ namespace trabajo_final_reloaded
             seleccionaver.Show();
             
         }
+
+        private void administrador_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
