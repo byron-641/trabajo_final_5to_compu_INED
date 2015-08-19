@@ -88,6 +88,7 @@
     <Compile Include="bimestres.Designer.cs">
       <DependentUpon>bimestres.cs</DependentUpon>
     </Compile>
+    <Compile Include="conexion.cs" />
     <Compile Include="creadordatos.cs">
       <SubType>Form</SubType>
     </Compile>
