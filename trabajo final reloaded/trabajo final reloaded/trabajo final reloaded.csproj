@@ -101,6 +101,12 @@
     <Compile Include="creadornotas.Designer.cs">
       <DependentUpon>creadornotas.cs</DependentUpon>
     </Compile>
+    <Compile Include="datos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datos2.Designer.cs">
+      <DependentUpon>datos2.cs</DependentUpon>
+    </Compile>
     <Compile Include="editor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="creadornotas.resx">
       <DependentUpon>creadornotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datos2.resx">
+      <DependentUpon>datos2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="editor.resx">
       <DependentUpon>editor.cs</DependentUpon>

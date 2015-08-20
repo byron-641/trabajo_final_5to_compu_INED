@@ -68,21 +68,24 @@ namespace trabajo_final_reloaded
         private void button3_Click(object sender, EventArgs e)
         {
             OleDbConnection miconexion = new OleDbConnection(conexion.con);
-            OleDbCommand guardar = new OleDbCommand("insert INTO alumno(Id, materia1b1, materia2b1, materia3b1, materia4b1, materia5b1, materia6b1, materia7b1, materia8b1, materia9b1, materia10b1, materia11b1, materia12b1, materia13b1, promediob1)values(@materia1b1, @materia2b1, @materia3b1, @materia4b1, @materia5b1, @materia6b1, @materia7b1, @materia8b1, @materia9b1, @materia10b1, @materia11b1, @materia12b1, @materia13b1, @promediob1)", miconexion);
+            OleDbCommand guardar = new OleDbCommand("update into alumno(Id, materia1b1, materia2b1, materia3b1, materia4b1, materia5b1, materia6b1, materia7b1, materia8b1, materia9b1, materia10b1, materia11b1, materia12b1, materia13b1, promediob1)values(@materia1b1, @materia2b1, @materia3b1, @materia4b1, @materia5b1, @materia6b1, @materia7b1, @materia8b1, @materia9b1, @materia10b1, @materia11b1, @materia12b1, @materia13b1, @promediob1)", miconexion);
+            OleDbCommand actualizar = new OleDbCommand("update alumno set Id=@Id" ,miconexion);
             
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
-            guardar.Parameters.AddWithValue("materia",textBox6.Text);
+            guardar.Parameters.AddWithValue("materia1b1",textBox6.Text);
+            guardar.Parameters.AddWithValue("materia2b1", textBox7.Text);
+            guardar.Parameters.AddWithValue("materia3b1", textBox8.Text);
+            guardar.Parameters.AddWithValue("materia4b1", textBox9.Text);
+            guardar.Parameters.AddWithValue("materia5b1", textBox10.Text);
+            guardar.Parameters.AddWithValue("materia6b1", textBox11.Text);
+            guardar.Parameters.AddWithValue("materia7b1", textBox12.Text);
+            guardar.Parameters.AddWithValue("materia8b1", textBox13.Text);
+            guardar.Parameters.AddWithValue("materia9b1", textBox14.Text);
+            guardar.Parameters.AddWithValue("materia10b1", textBox15.Text);
+            guardar.Parameters.AddWithValue("materia11b1", textBox16.Text);
+            guardar.Parameters.AddWithValue("materia12b1", textBox17.Text);
+            guardar.Parameters.AddWithValue("materia13b1", textBox18.Text);
+            guardar.Parameters.AddWithValue("promediob1", textBox19.Text);
+
         }
 
         private void button2_Click(object sender, EventArgs e)

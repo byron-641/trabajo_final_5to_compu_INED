@@ -9,5 +9,6 @@ namespace trabajo_final_reloaded
     class conexion
     {
         public static string con=(@"provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\GGM7\Documents\GitHub\trabajo_final_5to_compu_INED\trabajo final reloaded\proyecto.accdb");
+        public static string conn=(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\GGM7\Documents\GitHub\trabajo_final_5to_compu_INED\trabajo final reloaded\INED.accdb");
     }
 }
